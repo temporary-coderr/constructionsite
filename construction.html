@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color:rgb(255, 128, 0)" > BuildMart Construction Store </title>
+
+    <style>
+        body
+        {
+            font-family: Arial;
+            margin: 0;
+            background-color: #674545;
+        }
+
+        header
+        {
+            background-color: #d18b00;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card
+        {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            overflow: hidden;
+        }
+
+        .card img
+        {
+            width: 100%;
+            height: 180px;
+        }
+
+        .card-content
+        {
+            padding: 15px;
+        }
+
+        .price
+        {
+            color: green;
+            font-weight: bold;
+        }
+
+        button
+        {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover
+        {  animation-play-state: running;
+            background-color: rgb(66, 6, 218);
+            ;
+        }
+
+        footer
+        {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color:rgb(72, 0, 255) " >BuildMart Construction Store</h1>
+
+        <p1 style="color:rgb(1, 1, 1) " >
+            सिमेन्ट , रेट , गिट्टी , सरिया  एवं अन्य सभी
+                 कन्स्ट्रक्शन के समान मिल जाएंगे |
+        </p>
+    </header>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1200&auto=format&fit=crop">
+
+            <div class="card-content">
+
+                <h2>Cement Bags</h2>
+
+                <p class="price">₹380 per bag</p>
+
+                <p>High quality cement for strong buildings.</p>
+
+                <button>Contact Seller</button>
+
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=1200&auto=format&fit=crop">
+
+            <div class="card-content">
+
+                <h2>Bricks</h2>
+
+                <p class="price">₹9 per brick</p>
+
+                <p>Strong red bricks for house construction.</p>
+
+                <button>Contact Seller</button>
+
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+            <div class="card-content">
+
+                <h2>Steel Rods</h2>
+
+                <p class="price">₹65 per kg</p>
+
+                <p>Durable TMT steel rods for construction.</p>
+
+                <button>Contact Seller</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <!-- Contact Section -->
+
+    <footer>
+
+        <h2>Contact Us</h2>
+
+        <p>Phone: +91 8319523594</p>
+
+        <p> contact id  </p>
+
+        <p>Address - Pitampur , Indore</p>
+
+    </footer>
+
+    <script>
+        // Product data
+        const products = [
+            {
+                name: "Cement Bags",
+                price: "₹380 per bag",
+                description: "High quality cement for strong buildings."
+            },
+            {
+                name: "Bricks",
+                price: "₹9 per brick",
+                description: "Strong red bricks for house construction."
+            },
+            {
+                name: "Steel Rods",
+                price: "₹65 per kg",
+                description: "Durable TMT steel rods for construction."
+            }
+        ];
+
+        // Function to open WhatsApp with product message
+        function contactSellerWhatsApp(productIndex) {
+            const product = products[productIndex];
+            
+            // Create message for WhatsAp
+            const message = `Hi! 👋 I'm interested in ${product.name}. \nPrice: ${product.price}\n\n.`;
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Replace with your actual phone number later (with country code)
+            const phoneNumber = "918319523594"; // Placeholder - to be replaced with actual number
+            
+            // Open WhatsApp with pre-filled message
+            const whatsappURL = `https://wa.me/${918319523594}?text=${encodedMessage}`;
+            window.open(whatsappURL, '_blank');
+        }
+
+        // Attach click handlers to all buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach((button, index) => {
+                if (button.textContent.trim() === 'Contact Seller') {
+                    button.onclick = function(e) {
+                        e.preventDefault();
+                        contactSellerWhatsApp(index);
+                    };
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

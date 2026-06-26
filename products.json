@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Cement Bags",
+      "price": "₹380 per bag",
+      "priceNumeric": 380,
+      "unit": "bag",
+      "description": "High quality Portland cement for strong and durable buildings",
+      "image": "https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=400&auto=format&fit=crop",
+      "category": "Binding Materials"
+    },
+    {
+      "id": 2,
+      "name": "Bricks",
+      "price": "₹9 per brick",
+      "priceNumeric": 9,
+      "unit": "piece",
+      "description": "Strong red clay bricks perfect for house construction with excellent durability",
+      "image": "https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=400&auto=format&fit=crop",
+      "category": "Masonry"
+    },
+    {
+      "id": 3,
+      "name": "Steel Rods",
+      "price": "₹65 per kg",
+      "priceNumeric": 65,
+      "unit": "kg",
+      "description": "High-strength TMT steel rods for reinforced concrete structures",
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&auto=format&fit=crop",
+      "category": "Steel"
+    },
+    {
+      "id": 4,
+      "name": "Sand",
+      "price": "₹50 per bag",
+      "priceNumeric": 50,
+      "unit": "bag",
+      "description": "Fine quality sand for plastering and concrete mixing",
+      "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=400&auto=format&fit=crop",
+      "category": "Aggregate"
+    },
+    {
+      "id": 5,
+      "name": "Paint (20L)",
+      "price": "₹1200 per can",
+      "priceNumeric": 1200,
+      "unit": "can",
+      "description": "Durable weather-resistant paint for interior and exterior walls",
+      "image": "https://images.unsplash.com/photo-1578657671691-e31d90c4af9d?q=80&w=400&auto=format&fit=crop",
+      "category": "Finishing"
+    },
+    {
+      "id": 6,
+      "name": "Tiles (1 box)",
+      "price": "₹800 per box",
+      "priceNumeric": 800,
+      "unit": "box",
+      "description": "Premium ceramic tiles for flooring and walls with glossy finish",
+      "image": "https://images.unsplash.com/photo-1565193566173-7cde77ebc0cb?q=80&w=400&auto=format&fit=crop",
+      "category": "Finishing"
+    }
+  ]
+}
