@@ -3,7 +3,26 @@
 <head>
     <title style="color:rgb(255, 128, 0)" > BuildMart Construction Store </title>
 
-    <style>
+    <style>html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Necessary for mobile browsers to calculate height correctly */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Forces body to be at least the height of the device screen */
+}
+
+/* Wrap your header and the product cards section into one div if they aren't already */
+.main-content-wrapper {
+  flex: 1 0 auto; /* Forces this section to grow and push the footer down */
+}
+
+footer {
+  flex-shrink: 0; /* Prevents the footer from crushing or distorting on small screens */
+}
         body
         {
             font-family: Arial;
